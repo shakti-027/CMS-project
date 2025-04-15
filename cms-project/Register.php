@@ -83,6 +83,10 @@
         document.getElementById('userempty').innerHTML = 'Please enter your username';
         return false;
       }
+      else{
+        document.getElementById('userempty').innerHTML = '';
+
+      }
       // Check for leading or trailing whitespace
       if (username !== trimusername) {
         alert('Username cannot have leading or trailing whitespace');
@@ -99,6 +103,9 @@
         document.getElementById('emptyemail').innerHTML = 'Please enter your email';
         return false;
       }
+      else{
+        document.getElementById('emptyemail').innerHTML = '';
+      }
 
       if (!emailRegex.test(email)) {
         alert("Enter a valid email address.");
@@ -110,6 +117,10 @@
         document.getElementById('emptypassword').innerHTML = 'Please enter your Password';
         return false;
       }
+      else{
+        document.getElementById('emptypassword').innerHTML = '';
+
+      }
 
        // Check for leading or trailing whitespace
        if (password !== trimpassword) {
@@ -119,9 +130,7 @@
 
        // atleast contain 6 character in password
        if (password.length < 6) {
-        alert("Password should contain atleast 6 character")
-        document.getElementById('lengthpassword').innerHTML = "Password length should be atleat 6 character";
-        return false;
+        alert("Password should contain atleast 6 character");
       }
       if(confpassword ===''){
         alert("Confirm password can not be blank")
@@ -130,6 +139,10 @@
       if (password !== confpassword) {
         document.getElementById('confpassword').innerHTML = "confirm password does not matched, enter correct password";
         return false;
+      }
+      else{
+        document.getElementById('confpassword').innerHTML = "";
+
       }
  
       alert("form submitted successfully")
