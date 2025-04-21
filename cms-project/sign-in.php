@@ -94,7 +94,6 @@ if (isset($_SESSION['username'])) {
 
 <body class="d-flex flex-column min-vh-100">
     <?php include 'include/nav_user.php' ?>
-    <div id="box" hidden></div>
     <div class="container my-auto py-5">
         <div class="login-container">
             <div class="login-header">
